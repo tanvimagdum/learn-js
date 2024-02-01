@@ -6,8 +6,10 @@ const originalMatrix = [
   ];
   
   const newMatrix = originalMatrix.map((row) => {
-    return row.sort();
+    return [...row].sort();
   });
+
+  //map creates a shallow copy, use separator and create a deep copy to avoid affecting both lists
   
   // Modifying the original matrix (changing the last element of the first row)
   originalMatrix[0][2] = 99;
