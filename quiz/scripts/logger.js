@@ -10,3 +10,6 @@ const o1 = {
 const o2 = {
     errMsg : 'O2'
 };
+
+logMsg.call(o1);
+logMsg.call(o2);
